@@ -172,7 +172,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install cf-cli
       - name: Make Gradle Executable
-          run: chmod +x ./gradlew
+        run: chmod +x ./gradlew
       - name: Migrate tracker-database
         run: |
           cf api "$CF_API_URL"
