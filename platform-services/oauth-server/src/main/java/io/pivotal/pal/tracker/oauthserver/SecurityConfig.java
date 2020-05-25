@@ -16,7 +16,7 @@ public class SecurityConfig extends AuthorizationServerConfigurerAdapter {
         clients.inMemory()
                 .withClient("tracker-client")
                 .secret("supersecret")
-                .authorizedGrantTypes("authorization_code")
+                .authorizedGrantTypes("client_credentials")
                 .scopes("openid");
     }
 
